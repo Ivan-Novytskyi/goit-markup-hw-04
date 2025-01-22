@@ -88,9 +88,24 @@ nav {
   gap: 40px;
 }
 
+.header-menu-item {
+  position: relative;
+}
+
 .address-menu-list {
   display: flex;
   gap: 40px;
+}
+
+.link-stud::after {
+  content: "";
+  display: block;
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  background: #404bbf;
+  position: absolute;
+  bottom: 0;
 }
 
 .header-menu-link {
@@ -130,7 +145,17 @@ nav {
 
 .hero {
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
   padding: 188px 0;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero-wrapper {
