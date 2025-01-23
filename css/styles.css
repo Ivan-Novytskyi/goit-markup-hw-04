@@ -212,6 +212,15 @@ nav {
   flex-basis: calc((100% - 72px) / 4);
 }
 
+.features-item-pict {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
+
 .subtitle {
   font-weight: 500;
   font-size: 20px;
