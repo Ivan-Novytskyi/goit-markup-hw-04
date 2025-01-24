@@ -89,7 +89,6 @@ nav {
 }
 
 .header-menu-item {
-  position: relative;
 }
 
 .address-menu-list {
@@ -97,15 +96,19 @@ nav {
   gap: 40px;
 }
 
+.link-stud {
+  position: relative;
+}
+
 .link-stud::after {
   content: "";
-  display: block;
   border-radius: 2px;
-  width: 48px;
+  width: 100%;
   height: 4px;
   background: #404bbf;
   position: absolute;
-  bottom: 0;
+  left: 0;
+  bottom: -1px;
 }
 
 .header-menu-link {
@@ -116,6 +119,10 @@ nav {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+  position: relative;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-link:hover,
@@ -134,6 +141,9 @@ nav {
   color: #434455;
   padding: 24px 0;
   display: block;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-menu-item:hover,
@@ -187,6 +197,10 @@ nav {
   border: none;
   border-radius: 4px;
   min-width: 169px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover {
@@ -219,6 +233,7 @@ nav {
   height: 112px;
   background: #f4f4fd;
   margin-bottom: 8px;
+  padding: 24px 100px;
 }
 
 .subtitle {
@@ -261,7 +276,8 @@ nav {
 .team-item {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
-
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   border-radius: 0 0 4px 4px;
 }
 .team-image {
@@ -281,6 +297,29 @@ nav {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+}
+
+.workers-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.workers-social-icons {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-pictures {
+  fill: #f4f4fd;
 }
 
 /* /-------portfolio---------/ */
@@ -306,7 +345,39 @@ nav {
 .portfolio-item {
   width: calc((100% - 48px) / 3);
 }
+
+.portfolio-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item:hover .portfolio-cover-text {
+  transform: translateY(0);
+}
+
+.portfolio-cover-wrapp {
+  position: relative;
+  overflow: hidden;
+}
+
 .portfolio-image {
+}
+
+.portfolio-cover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 32px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  height: 100%;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
 }
 
 .application {
@@ -326,14 +397,17 @@ nav {
 
 .footer {
   background-color: #2e2f42;
+}
+
+.footer-cont-blok {
   padding: 100px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 120px;
 }
 
 /* .footer-cont {
-  display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  flex-direction: column;
+  margin-left: 0 auto;
 } */
 
 .footer-link {
@@ -364,4 +438,17 @@ nav {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.footer-soc-link {
+  left: 0;
+}
+
+.footer-soc-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
 }
