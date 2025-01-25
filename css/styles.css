@@ -477,5 +477,6 @@ nav {
 }
 
 .workers-soc-list {
+  display: flex;
   gap: 16px;
 }
