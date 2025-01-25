@@ -330,7 +330,8 @@ nav {
   justify-content: center;
 }
 
-.workers-social-icons:hover {
+.workers-social-icons:hover,
+.workers-social-icons:focus {
   background-color: #404bbf;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
