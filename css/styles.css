@@ -236,6 +236,12 @@ nav {
   padding: 24px 100px;
 }
 
+.workers-social-icons:hover {
+  background-color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -316,6 +322,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.workers-social-icons:hover {
+  background-color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .features-pictures {
