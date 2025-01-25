@@ -144,7 +144,7 @@ nav {
   color: #434455;
   padding: 24px 0;
   display: block;
-  transition-property: background;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
