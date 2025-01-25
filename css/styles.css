@@ -475,3 +475,7 @@ nav {
   color: #ffffff;
   margin-bottom: 16px;
 }
+
+.workers-social-list {
+  gap: 16px;
+}
